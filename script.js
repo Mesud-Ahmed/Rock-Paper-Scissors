@@ -66,6 +66,7 @@ function playGame(){
 
     playRound(humanselection,computerSelection);
     }
+    console.log("Final result after playing 5 rounds: ")
     console.log("you won " + humanScore + " times.");
     console.log("the computer won " + compuerScore + " times.");
     if(equal != 0){
