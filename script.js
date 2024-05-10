@@ -1,4 +1,6 @@
-
+function welcome(){
+    alert("welocme to the Rock,paper and Scissors console game. inorder to see the results for each round, please inspect this page and open the console panel. ");
+}
 function getComputerChoice(){
     let num = Math.floor(Math.random() * 3);
     if(num == 0)
@@ -73,4 +75,5 @@ function playGame(){
         console.log("you are draw " + equal +" times.");
     }
 }
+welcome();
 playGame();
