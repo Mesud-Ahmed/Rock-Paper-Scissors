@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock paper scissors</title>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .buttons {
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #c99f2b;
+        }
+
+        #results {
+            font-size: 20px;
+            font-weight: bold;
+            color: #854040;
+        }
+    </style>
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="buttons">
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+            <button id="rock">Rock</button>
+        </div>
+        <div id="results"></div>
+    </div>
 </body>
 </html>
